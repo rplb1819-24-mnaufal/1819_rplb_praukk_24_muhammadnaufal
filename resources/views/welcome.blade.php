@@ -29,8 +29,8 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Pricing</a>
                 </li>
-                <li class="nav-item">
-                    @if (Route::has('login'))
+                @if (Route::has('login'))
+                    <li class="nav-item">
                             @auth
                                 <a class="nav-link" href="{{ url('/home') }}">Home</a>
                             @else
@@ -42,8 +42,8 @@
                                 </li>
                                 @endif
                             @endauth
-                    @endif
-                </li>
+                    </li>
+                @endif
               </ul>
             </div>
           </nav>
